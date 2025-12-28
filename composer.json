@@ -53,7 +53,7 @@
         "psr/log": "^3.0.2",
         "ramsey/uuid": "^4.9.2",
         "symfony/console": "^8.0.1",
-        "vlucas/phpdotenv": "^5.6.2",
+        "vlucas/phpdotenv": "^5.6.3",
         "yiisoft/active-record": "^1.0",
         "yiisoft/aliases": "^3.1.1",
         "yiisoft/assets": "^5.1.2",
