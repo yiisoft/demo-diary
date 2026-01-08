@@ -36,7 +36,10 @@
         "psalm": "psalm",
         "cs-fix": "php-cs-fixer fix --config=.php-cs-fixer.php --diff",
         "rector": "rector",
-        "composer-dependency-analyser": "composer-dependency-analyser"
+        "composer-dependency-analyser": "composer-dependency-analyser",
+        "post-install-cmd": [
+            "@php print-env.php"
+        ]
     },
     "require": {
         "php": "^8.5",
