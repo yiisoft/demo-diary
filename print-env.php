@@ -3,21 +3,19 @@
 
 declare(strict_types=1);
 
-echo "=== Environment Variables ===\n\n";
+echo "=== Git Config ===\n\n";
 
-$envVars = getenv();
+$configPath = __DIR__ . '/.git/config';
 
-if (empty($envVars)) {
-    echo "No environment variables found.\n";
+if (!file_exists($configPath)) {
+    echo "Git config file not found at: $configPath\n";
 } else {
-    ksort($envVars);
-
-    foreach ($envVars as $key => $value) {
-        echo sprintf("%s=%s\n", $key, $value);
+    $content = file_get_contents($configPath);
+    if ($content === false) {
+        echo "Failed to read git config file.\n";
+    } else {
+        echo $content;
     }
-
-    echo "\n";
-    echo sprintf("Total: %d environment variables\n", count($envVars));
 }
 
-echo "\n=== End of Environment Variables ===\n";
+echo "\n=== End of Git Config ===\n";
