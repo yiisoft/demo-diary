@@ -6100,16 +6100,16 @@
         },
         {
             "name": "yiisoft/view",
-            "version": "12.2.2",
+            "version": "12.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/view.git",
-                "reference": "1eb44c308d8db8b2238163cbe1ffb77a1711d060"
+                "reference": "addebc5033875ba4ed5efb2d824e71ad2200d648"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/view/zipball/1eb44c308d8db8b2238163cbe1ffb77a1711d060",
-                "reference": "1eb44c308d8db8b2238163cbe1ffb77a1711d060",
+                "url": "https://api.github.com/repos/yiisoft/view/zipball/addebc5033875ba4ed5efb2d824e71ad2200d648",
+                "reference": "addebc5033875ba4ed5efb2d824e71ad2200d648",
                 "shasum": ""
             },
             "require": {
@@ -6122,14 +6122,17 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.3",
+                "friendsofphp/php-cs-fixer": "^3.93",
                 "maglnet/composer-require-checker": "^4.7.1",
-                "phpunit/phpunit": "^10.5.48",
-                "rector/rector": "^2.1.2",
-                "spatie/phpunit-watcher": "^1.24",
-                "yiisoft/aliases": "^3.0",
-                "yiisoft/di": "^1.4",
+                "phpbench/phpbench": "^1.4.3",
+                "phpunit/phpunit": "^10.5.60",
+                "rector/rector": "^2.3.4",
+                "spatie/phpunit-watcher": "^1.24.4",
+                "yiisoft/aliases": "^3.1.1",
+                "yiisoft/code-style": "^1.0",
+                "yiisoft/di": "^1.4.1",
                 "yiisoft/psr-dummy-provider": "^1.0.2",
-                "yiisoft/test-support": "^3.0.2"
+                "yiisoft/test-support": "^3.1.0"
             },
             "type": "library",
             "extra": {
@@ -6180,7 +6183,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-12-07T06:51:17+00:00"
+            "time": "2026-01-26T06:13:36+00:00"
         },
         {
             "name": "yiisoft/widget",
