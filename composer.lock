@@ -3081,16 +3081,16 @@
         },
         {
             "name": "yiisoft/db",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/db.git",
-                "reference": "28dd80a093d9985f100db9f9ab879b6e25b61467"
+                "reference": "fae72a47856f6947de7e5e18d7e5dd0b46ee1daa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/db/zipball/28dd80a093d9985f100db9f9ab879b6e25b61467",
-                "reference": "28dd80a093d9985f100db9f9ab879b6e25b61467",
+                "url": "https://api.github.com/repos/yiisoft/db/zipball/fae72a47856f6947de7e5e18d7e5dd0b46ee1daa",
+                "reference": "fae72a47856f6947de7e5e18d7e5dd0b46ee1daa",
                 "shasum": ""
             },
             "require": {
@@ -3169,7 +3169,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-12-05T14:18:34+00:00"
+            "time": "2026-02-09T19:21:43+00:00"
         },
         {
             "name": "yiisoft/db-migration",
