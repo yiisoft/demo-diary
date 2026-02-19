@@ -63,7 +63,7 @@
         "yiisoft/csrf": "^2.2.3",
         "yiisoft/data": "^2",
         "yiisoft/data-db": "^1",
-        "yiisoft/data-response": "^2.1.2",
+        "yiisoft/data-response": "dev-master as 2.1.2",
         "yiisoft/db": "^2",
         "yiisoft/db-migration": "^2.0.1",
         "yiisoft/db-sqlite": "^2",
