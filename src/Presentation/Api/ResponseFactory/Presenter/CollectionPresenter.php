@@ -18,7 +18,6 @@ final readonly class CollectionPresenter implements PresenterInterface
         $result = [];
         foreach ($value as $item) {
             $result[] = $this->itemPresenter->present($item);
-            ;
         }
         return $result;
     }
