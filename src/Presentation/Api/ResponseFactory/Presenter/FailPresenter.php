@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace App\Presentation\Api\ResponseFactory\Presenter;
 
-use Yiisoft\DataResponse\DataResponse;
-use Yiisoft\Http\Status;
-
 /**
  * @implements PresenterInterface<mixed>
  */
