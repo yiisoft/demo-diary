@@ -8,11 +8,14 @@ use Yiisoft\Assets\AssetBundle;
 
 final class BootstrapAsset extends AssetBundle
 {
+    #[\Override]
     public bool $cdn = true;
+    #[\Override]
     public array $css = [
         'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css',
         'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css',
     ];
+    #[\Override]
     public array $js = [
         'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js',
     ];
