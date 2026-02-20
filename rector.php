@@ -8,6 +8,7 @@ use Rector\Php74\Rector\Closure\ClosureToArrowFunctionRector;
 use Rector\Php80\Rector\Class_\ClassPropertyAssignToConstructorPromotionRector;
 use Rector\Php81\Rector\Property\ReadOnlyPropertyRector;
 use Rector\Php83\Rector\ClassMethod\AddOverrideAttributeToOverriddenMethodsRector;
+use Rector\Php85\Rector\Property\AddOverrideAttributeToOverriddenPropertiesRector;
 
 return RectorConfig::configure()
     ->withPaths([
@@ -25,4 +26,5 @@ return RectorConfig::configure()
         ClosureToArrowFunctionRector::class,
         ReadOnlyPropertyRector::class,
         AddOverrideAttributeToOverriddenMethodsRector::class,
+        AddOverrideAttributeToOverriddenPropertiesRector::class,
     ]);
