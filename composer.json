@@ -108,7 +108,7 @@
         "codeception/module-cli": "^2.0.1",
         "codeception/module-phpbrowser": "^4.0.0",
         "friendsofphp/php-cs-fixer": "^3.94.1",
-        "phpunit/phpunit": "^12.5.14",
+        "phpunit/phpunit": "^13.0.5",
         "rector/rector": "^2.3.7",
         "roave/security-advisories": "dev-latest",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
