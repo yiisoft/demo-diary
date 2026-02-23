@@ -3000,16 +3000,16 @@
         },
         {
             "name": "yiisoft/data-response",
-            "version": "2.1.2",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/data-response.git",
-                "reference": "8289c92e719a1698a047739318ca23bd973bf90c"
+                "reference": "6b8c7a94fe6908baea5a933b187c5dcb1af2a0b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/data-response/zipball/8289c92e719a1698a047739318ca23bd973bf90c",
-                "reference": "8289c92e719a1698a047739318ca23bd973bf90c",
+                "url": "https://api.github.com/repos/yiisoft/data-response/zipball/6b8c7a94fe6908baea5a933b187c5dcb1af2a0b8",
+                "reference": "6b8c7a94fe6908baea5a933b187c5dcb1af2a0b8",
                 "shasum": ""
             },
             "require": {
@@ -3024,17 +3024,23 @@
                 "yiisoft/strings": "^2.0"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.9.1",
+                "friendsofphp/php-cs-fixer": "^3.92.5",
                 "httpsoft/http-message": "^1.1.6",
-                "maglnet/composer-require-checker": "^4.7.1",
                 "phpunit/phpunit": "^10.5.52",
                 "rector/rector": "^2.1.4",
                 "roave/infection-static-analysis-plugin": "^1.35",
-                "spatie/phpunit-watcher": "^1.24",
                 "vimeo/psalm": "^5.26.1 || ^6.8.0",
-                "yiisoft/di": "^1.4"
+                "yiisoft/di": "^1.4",
+                "yiisoft/test-support": "^3.2"
             },
             "type": "library",
             "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": true,
+                    "target-directory": "tools"
+                },
                 "config-plugin": {
                     "di-web": "di-web.php",
                     "params": "params.php"
@@ -3077,7 +3083,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-12-18T21:05:55+00:00"
+            "time": "2026-02-23T08:36:46+00:00"
         },
         {
             "name": "yiisoft/db",
@@ -14841,5 +14847,5 @@
         "ext-mbstring": "*"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
