@@ -8,13 +8,13 @@ use App\Presentation\Site\Layout\Layout;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Yiisoft\Http\Status;
-use Yiisoft\Yii\View\Renderer\ViewRenderer;
+use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 
 final readonly class ResponseFactory implements ResponseFactoryInterface
 {
     public function __construct(
         private ResponseFactoryInterface $responseFactory,
-        private ViewRenderer $viewRenderer,
+        private WebViewRenderer $viewRenderer,
     ) {}
 
     public function createResponse(int $code = 200, string $reasonPhrase = ''): ResponseInterface
