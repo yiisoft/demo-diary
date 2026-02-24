@@ -99,7 +99,7 @@
         "yiisoft/yii-http": "^1.1.1",
         "yiisoft/yii-runner-console": "^2.2.1",
         "yiisoft/yii-runner-http": "^3.2.1",
-        "yiisoft/yii-view-renderer": "dev-master as 7.3.1"
+        "yiisoft/yii-view-renderer": "^7.4"
     },
     "require-dev": {
         "codeception/c3": "^2.9",
