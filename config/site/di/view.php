@@ -12,7 +12,7 @@ use Yiisoft\User\CurrentUser;
 use Yiisoft\View\WebView;
 use Yiisoft\Yii\View\Renderer\CsrfViewInjection;
 use Yiisoft\Yii\View\Renderer\InjectionContainer\InjectionContainer;
-use Yiisoft\Yii\View\Renderer\ViewRenderer;
+use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 
 return [
     WebView::class => [
@@ -27,7 +27,7 @@ return [
         ],
     ],
 
-    ViewRenderer::class => [
+    WebViewRenderer::class => [
         '__construct()' => [
             'layout' => Layout::MAIN,
             'injections' => [

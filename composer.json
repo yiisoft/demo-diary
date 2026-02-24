@@ -63,7 +63,7 @@
         "yiisoft/csrf": "^2.2.3",
         "yiisoft/data": "^2",
         "yiisoft/data-db": "^1",
-        "yiisoft/data-response": "^2.1.2",
+        "yiisoft/data-response": "^2.2",
         "yiisoft/db": "^2.0.1",
         "yiisoft/db-migration": "^2.0.1",
         "yiisoft/db-sqlite": "^2",
@@ -99,7 +99,7 @@
         "yiisoft/yii-http": "^1.1.1",
         "yiisoft/yii-runner-console": "^2.2.1",
         "yiisoft/yii-runner-http": "^3.2.1",
-        "yiisoft/yii-view-renderer": "^7.3.1"
+        "yiisoft/yii-view-renderer": "^7.4"
     },
     "require-dev": {
         "codeception/c3": "^2.9",
@@ -107,9 +107,9 @@
         "codeception/module-asserts": "^3.3.0",
         "codeception/module-cli": "^2.0.1",
         "codeception/module-phpbrowser": "^4.0.0",
-        "friendsofphp/php-cs-fixer": "^3.94.1",
-        "phpunit/phpunit": "^12.5.14",
-        "rector/rector": "^2.3.7",
+        "friendsofphp/php-cs-fixer": "^3.94.2",
+        "phpunit/phpunit": "^13.0.5",
+        "rector/rector": "^2.3.8",
         "roave/security-advisories": "dev-latest",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
         "vimeo/psalm": "^6.15.1"

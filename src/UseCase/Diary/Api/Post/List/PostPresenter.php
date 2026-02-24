@@ -8,7 +8,6 @@ use App\Domain\Post\Post;
 use App\Presentation\Api\ResponseFactory\Presenter\PresenterInterface;
 use App\Shared\UrlGenerator;
 use DateTimeImmutable;
-use Yiisoft\DataResponse\DataResponse;
 
 /**
  * @implements PresenterInterface<Post>
@@ -19,12 +18,12 @@ final readonly class PostPresenter implements PresenterInterface
         private UrlGenerator $urlGenerator,
     ) {}
 
-    public function present(mixed $value, DataResponse $response): DataResponse
+    public function present(mixed $value): array
     {
         /** @var DateTimeImmutable $publicationDate */
         $publicationDate = $value->publication_date;
 
-        return $response->withData([
+        return [
             'id' => $value->getId(),
             'title' => $value->title,
             'url' => $this->urlGenerator->post($value->slug, absolute: true),
@@ -34,6 +33,6 @@ final readonly class PostPresenter implements PresenterInterface
                 static fn($category) => $category->getId(),
                 $value->getCategories(),
             ),
-        ]);
+        ];
     }
 }
