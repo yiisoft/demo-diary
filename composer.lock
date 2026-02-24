@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fe5080470735a2b56c5644e4d0046d8",
+    "content-hash": "bf9de2862aa3ebc6e0a11088e9076817",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -6847,16 +6847,16 @@
         },
         {
             "name": "yiisoft/yii-view-renderer",
-            "version": "dev-master",
+            "version": "7.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-view-renderer.git",
-                "reference": "d0236c2bc7601dc12b9ed8bf8c1757e3b529e2a2"
+                "reference": "ebd47ec16c90609470f2206a193bbe6b23e37763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-view-renderer/zipball/d0236c2bc7601dc12b9ed8bf8c1757e3b529e2a2",
-                "reference": "d0236c2bc7601dc12b9ed8bf8c1757e3b529e2a2",
+                "url": "https://api.github.com/repos/yiisoft/yii-view-renderer/zipball/ebd47ec16c90609470f2206a193bbe6b23e37763",
+                "reference": "ebd47ec16c90609470f2206a193bbe6b23e37763",
                 "shasum": ""
             },
             "require": {
@@ -6888,7 +6888,6 @@
                 "yiisoft/test-support": "^3.2.0",
                 "yiisoft/yii-debug": "dev-master"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "bamarni-bin": {
@@ -6939,7 +6938,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2026-02-24T05:20:32+00:00"
+            "time": "2026-02-24T05:36:10+00:00"
         }
     ],
     "packages-dev": [
@@ -14951,18 +14950,10 @@
             "time": "2026-02-18T14:09:36+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "yiisoft/yii-view-renderer",
-            "version": "9999999-dev",
-            "alias": "7.3.1",
-            "alias_normalized": "7.3.1.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roave/security-advisories": 20,
-        "yiisoft/yii-view-renderer": 20
+        "roave/security-advisories": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
