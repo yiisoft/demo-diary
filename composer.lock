@@ -2048,16 +2048,16 @@
         },
         {
             "name": "yiisoft/active-record",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/active-record.git",
-                "reference": "bb0a410dacc9ee1cf13bd5354bda0973b1c79f88"
+                "reference": "b1f825d53c9ce7aef7a68cc32629b62e7c4875d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/active-record/zipball/bb0a410dacc9ee1cf13bd5354bda0973b1c79f88",
-                "reference": "bb0a410dacc9ee1cf13bd5354bda0973b1c79f88",
+                "url": "https://api.github.com/repos/yiisoft/active-record/zipball/b1f825d53c9ce7aef7a68cc32629b62e7c4875d8",
+                "reference": "b1f825d53c9ce7aef7a68cc32629b62e7c4875d8",
                 "shasum": ""
             },
             "require": {
@@ -2136,7 +2136,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2026-02-28T15:03:38+00:00"
+            "time": "2026-03-11T06:54:20+00:00"
         },
         {
             "name": "yiisoft/aliases",
