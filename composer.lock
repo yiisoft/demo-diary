@@ -6112,16 +6112,16 @@
         },
         {
             "name": "yiisoft/view",
-            "version": "12.2.3",
+            "version": "12.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/view.git",
-                "reference": "addebc5033875ba4ed5efb2d824e71ad2200d648"
+                "reference": "eaf52e6ba92ce6b622a6718bda295f8383964e12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/view/zipball/addebc5033875ba4ed5efb2d824e71ad2200d648",
-                "reference": "addebc5033875ba4ed5efb2d824e71ad2200d648",
+                "url": "https://api.github.com/repos/yiisoft/view/zipball/eaf52e6ba92ce6b622a6718bda295f8383964e12",
+                "reference": "eaf52e6ba92ce6b622a6718bda295f8383964e12",
                 "shasum": ""
             },
             "require": {
@@ -6129,7 +6129,7 @@
                 "yiisoft/arrays": "^2.0 || ^3.0",
                 "yiisoft/cache": "^1.0 || ^2.0 || ^3.0",
                 "yiisoft/files": "^1.0 || ^2.0",
-                "yiisoft/html": "^2.5 || ^3.0",
+                "yiisoft/html": "^2.5 || ^3.0 || ^4.0",
                 "yiisoft/json": "^1.0"
             },
             "require-dev": {
@@ -6195,7 +6195,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2026-01-26T06:13:36+00:00"
+            "time": "2026-03-18T10:35:05+00:00"
         },
         {
             "name": "yiisoft/widget",
