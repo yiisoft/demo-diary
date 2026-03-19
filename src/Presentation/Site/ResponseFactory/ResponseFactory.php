@@ -7,12 +7,14 @@ namespace App\Presentation\Site\ResponseFactory;
 use App\Presentation\Site\Layout\Layout;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
+use Yiisoft\DataResponse\ResponseFactory\HtmlResponseFactory;
 use Yiisoft\Http\Status;
 use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 
 final readonly class ResponseFactory implements ResponseFactoryInterface
 {
     public function __construct(
+        private HtmlResponseFactory $htmlResponseFactory,
         private ResponseFactoryInterface $responseFactory,
         private WebViewRenderer $viewRenderer,
     ) {}
@@ -20,6 +22,14 @@ final readonly class ResponseFactory implements ResponseFactoryInterface
     public function createResponse(int $code = 200, string $reasonPhrase = ''): ResponseInterface
     {
         return $this->responseFactory->createResponse($code, $reasonPhrase);
+    }
+
+    public function createHtmlResponse(
+        mixed $data = null,
+        int $code = Status::OK,
+        string $reasonPhrase = '',
+    ): ResponseInterface {
+        return $this->htmlResponseFactory->createResponse($data, $code, $reasonPhrase);
     }
 
     public function temporarilyRedirect(string $url, ?ResponseInterface $response = null): ResponseInterface
