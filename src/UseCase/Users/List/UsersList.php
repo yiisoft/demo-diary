@@ -13,6 +13,7 @@ use Yiisoft\Yii\DataView\GridView\Column\ActionButton;
 use Yiisoft\Yii\DataView\GridView\Column\ActionColumn;
 use Yiisoft\Yii\DataView\GridView\Column\DataColumn;
 use Yiisoft\Yii\DataView\GridView\GridView;
+use Yiisoft\Yii\DataView\Pagination\OffsetPagination;
 
 final class UsersList extends Widget
 {
@@ -23,17 +24,33 @@ final class UsersList extends Widget
 
     public function render(): string
     {
+        $htmxLoadAttributes = [
+            'hx-indicator' => '#UsersGridView',
+            'hx-target' => '#UsersGridView',
+            'hx-replace-url' => 'true',
+            'hx-swap' => 'outerHTML',
+        ];
+
         return GridView::widget()
             ->containerAttributes([
                 'id' => 'UsersGridView',
                 'class' => 'mt-4 position-relative',
-                'hx-indicator' => '#UsersGridView',
-                'hx-target' => '#UsersGridView',
-                'hx-boost' => 'true',
-                'hx-swap' => 'outerHTML',
-                'hx-push-url' => 'false',
             ])
             ->dataReader($this->userDataReader)
+            ->sortableLinkAttributes([
+                'hx-boost' => 'true',
+                ...$htmxLoadAttributes,
+            ])
+            ->filterFormAttributes([
+                'hx-boost' => 'true',
+                ...$htmxLoadAttributes,
+            ])
+            ->paginationWidget(
+                OffsetPagination::widget()->addLinkAttributes([
+                    'hx-boost' => 'true',
+                    ...$htmxLoadAttributes,
+                ]),
+            )
             ->columns(
                 new DataColumn(
                     'id',
