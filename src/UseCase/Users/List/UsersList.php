@@ -7,6 +7,7 @@ namespace App\UseCase\Users\List;
 use App\Shared\UrlGenerator;
 use App\UseCase\Users\List\DataReader\User;
 use App\UseCase\Users\List\DataReader\UserDataReader;
+use Yiisoft\Data\Paginator\PaginatorInterface;
 use Yiisoft\Html\Html;
 use Yiisoft\Widget\Widget;
 use Yiisoft\Yii\DataView\GridView\Column\ActionButton;
@@ -14,6 +15,7 @@ use Yiisoft\Yii\DataView\GridView\Column\ActionColumn;
 use Yiisoft\Yii\DataView\GridView\Column\DataColumn;
 use Yiisoft\Yii\DataView\GridView\GridView;
 use Yiisoft\Yii\DataView\Pagination\OffsetPagination;
+use Yiisoft\Yii\DataView\Pagination\PaginationWidgetInterface;
 
 final class UsersList extends Widget
 {
@@ -31,6 +33,12 @@ final class UsersList extends Widget
             'hx-swap' => 'outerHTML',
         ];
 
+        /** @var PaginationWidgetInterface<PaginatorInterface> */
+        $pagination = OffsetPagination::widget()->addLinkAttributes([
+            'hx-boost' => 'true',
+            ...$htmxLoadAttributes,
+        ]);
+
         return GridView::widget()
             ->containerAttributes([
                 'id' => 'UsersGridView',
@@ -45,12 +53,7 @@ final class UsersList extends Widget
                 'hx-boost' => 'true',
                 ...$htmxLoadAttributes,
             ])
-            ->paginationWidget(
-                OffsetPagination::widget()->addLinkAttributes([
-                    'hx-boost' => 'true',
-                    ...$htmxLoadAttributes,
-                ]),
-            )
+            ->paginationWidget($pagination)
             ->columns(
                 new DataColumn(
                     'id',

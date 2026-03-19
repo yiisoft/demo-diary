@@ -112,7 +112,7 @@
         "rector/rector": "^2.3.8",
         "roave/security-advisories": "dev-latest",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
-        "vimeo/psalm": "^6.15.1"
+        "vimeo/psalm": "^6.16.1"
     },
     "autoload": {
         "psr-4": {
