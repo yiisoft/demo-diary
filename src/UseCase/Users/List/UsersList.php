@@ -23,11 +23,6 @@ final class UsersList extends Widget
 
     public function render(): string
     {
-
-        $htmxLoadAttributes = [
-
-        ];
-
         return GridView::widget()
             ->containerAttributes([
                 'id' => 'UsersGridView',
