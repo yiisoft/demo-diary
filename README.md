@@ -18,7 +18,7 @@ authentication, and database migrations.
 **Features:**
 
 - Diary with categories and posts (create, read, update, delete)
-- User management with [GridView](https://github.com/yiisoft/yii-dataview) list powered by [HTMX](https://htmx.org/) — pagination, sorting, and filtering work via AJAX without full page reloads
+- User management with [GridView](https://github.com/yiisoft/yii-dataview) list powered by [htmx](https://htmx.org/) — pagination, sorting, and filtering work via AJAX without full page reloads
 - Authentication and access control
 - Database migrations via [Yii DB Migration](https://github.com/yiisoft/yii-db-migration)
 
