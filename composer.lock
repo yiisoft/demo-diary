@@ -3801,26 +3801,27 @@
         },
         {
             "name": "yiisoft/form",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/form.git",
-                "reference": "8953fb406522f61f63865de6bd0be09886d75a6e"
+                "reference": "b33b34007ffea2fb412922c9980420c74f93b171"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/form/zipball/8953fb406522f61f63865de6bd0be09886d75a6e",
-                "reference": "8953fb406522f61f63865de6bd0be09886d75a6e",
+                "url": "https://api.github.com/repos/yiisoft/form/zipball/b33b34007ffea2fb412922c9980420c74f93b171",
+                "reference": "b33b34007ffea2fb412922c9980420c74f93b171",
                 "shasum": ""
             },
             "require": {
                 "php": "8.1 - 8.5",
                 "yiisoft/friendly-exception": "^1.0",
-                "yiisoft/html": "^3.8",
+                "yiisoft/html": "^3.13 || ^4.0",
                 "yiisoft/widget": "^2.2"
             },
             "require-dev": {
-                "infection/infection": "^0.26.21 || ^0.29.14",
+                "bamarni/composer-bin-plugin": "^1.8.3",
+                "friendsofphp/php-cs-fixer": "^3.92",
                 "maglnet/composer-require-checker": "^4.7.1",
                 "phpunit/phpunit": "^10.5.45",
                 "rector/rector": "^2.0.10",
@@ -3829,6 +3830,11 @@
             },
             "type": "library",
             "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": true,
+                    "target-directory": "tools"
+                },
                 "config-plugin": {
                     "params": "params.php",
                     "bootstrap": "bootstrap.php"
@@ -3868,13 +3874,9 @@
                 {
                     "url": "https://opencollective.com/yiisoft",
                     "type": "open_collective"
-                },
-                {
-                    "url": "https://polar.sh/yiisoft",
-                    "type": "polar"
                 }
             ],
-            "time": "2025-12-23T06:13:33+00:00"
+            "time": "2026-03-20T07:38:31+00:00"
         },
         {
             "name": "yiisoft/form-model",
@@ -6112,16 +6114,16 @@
         },
         {
             "name": "yiisoft/view",
-            "version": "12.2.3",
+            "version": "12.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/view.git",
-                "reference": "addebc5033875ba4ed5efb2d824e71ad2200d648"
+                "reference": "eaf52e6ba92ce6b622a6718bda295f8383964e12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/view/zipball/addebc5033875ba4ed5efb2d824e71ad2200d648",
-                "reference": "addebc5033875ba4ed5efb2d824e71ad2200d648",
+                "url": "https://api.github.com/repos/yiisoft/view/zipball/eaf52e6ba92ce6b622a6718bda295f8383964e12",
+                "reference": "eaf52e6ba92ce6b622a6718bda295f8383964e12",
                 "shasum": ""
             },
             "require": {
@@ -6129,7 +6131,7 @@
                 "yiisoft/arrays": "^2.0 || ^3.0",
                 "yiisoft/cache": "^1.0 || ^2.0 || ^3.0",
                 "yiisoft/files": "^1.0 || ^2.0",
-                "yiisoft/html": "^2.5 || ^3.0",
+                "yiisoft/html": "^2.5 || ^3.0 || ^4.0",
                 "yiisoft/json": "^1.0"
             },
             "require-dev": {
@@ -6195,20 +6197,20 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2026-01-26T06:13:36+00:00"
+            "time": "2026-03-18T10:35:05+00:00"
         },
         {
             "name": "yiisoft/widget",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/widget.git",
-                "reference": "afa05b1ed2bb3f83b5f3f1b640f3833380b202c7"
+                "reference": "a3a88b7b5a0ced16a8354e4a915226301bae76dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/widget/zipball/afa05b1ed2bb3f83b5f3f1b640f3833380b202c7",
-                "reference": "afa05b1ed2bb3f83b5f3f1b640f3833380b202c7",
+                "url": "https://api.github.com/repos/yiisoft/widget/zipball/a3a88b7b5a0ced16a8354e4a915226301bae76dc",
+                "reference": "a3a88b7b5a0ced16a8354e4a915226301bae76dc",
                 "shasum": ""
             },
             "require": {
@@ -6217,7 +6219,7 @@
                 "yiisoft/definitions": "^3.1",
                 "yiisoft/factory": "^1.2",
                 "yiisoft/friendly-exception": "^1.0",
-                "yiisoft/html": "^2.0 || ^3.0"
+                "yiisoft/html": "^2.0 || ^3.0 || ^4.0"
             },
             "require-dev": {
                 "maglnet/composer-require-checker": "^4.4",
@@ -6273,7 +6275,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-12-16T06:52:51+00:00"
+            "time": "2026-03-18T10:37:07+00:00"
         },
         {
             "name": "yiisoft/yii-console",
@@ -6847,16 +6849,16 @@
         },
         {
             "name": "yiisoft/yii-view-renderer",
-            "version": "7.4.0",
+            "version": "7.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-view-renderer.git",
-                "reference": "ebd47ec16c90609470f2206a193bbe6b23e37763"
+                "reference": "12d788cf635657138513ea314ecca0078dfb127f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-view-renderer/zipball/ebd47ec16c90609470f2206a193bbe6b23e37763",
-                "reference": "ebd47ec16c90609470f2206a193bbe6b23e37763",
+                "url": "https://api.github.com/repos/yiisoft/yii-view-renderer/zipball/12d788cf635657138513ea314ecca0078dfb127f",
+                "reference": "12d788cf635657138513ea314ecca0078dfb127f",
                 "shasum": ""
             },
             "require": {
@@ -6868,7 +6870,7 @@
                 "yiisoft/csrf": "^1.2 || ^2.0",
                 "yiisoft/data-response": "^2.2",
                 "yiisoft/friendly-exception": "^1.0",
-                "yiisoft/html": "^2.5 || ^3.0",
+                "yiisoft/html": "^2.5 || ^3.0 || ^4.0",
                 "yiisoft/strings": "^2.0",
                 "yiisoft/view": "^12"
             },
@@ -6938,7 +6940,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2026-02-24T05:36:10+00:00"
+            "time": "2026-03-18T13:13:58+00:00"
         }
     ],
     "packages-dev": [
