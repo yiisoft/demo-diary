@@ -3,7 +3,6 @@
         <img src="https://yiisoft.github.io/docs/images/yii_logo.svg" height="100px" alt="Yii">
     </a>
     <h1 align="center">Yii3 Demo Diary</h1>
-    <br>
 </p>
 
 [![Build status](https://github.com/yiisoft/demo-diary/actions/workflows/build.yml/badge.svg)](https://github.com/yiisoft/demo-diary/actions/workflows/build.yml)
