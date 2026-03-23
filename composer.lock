@@ -6362,16 +6362,16 @@
         },
         {
             "name": "yiisoft/yii-dataview",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-dataview.git",
-                "reference": "26b978a8702e166ba455910c52481963159b6ee8"
+                "reference": "832f14490a021d240b7c7d0ed476063548176cf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-dataview/zipball/26b978a8702e166ba455910c52481963159b6ee8",
-                "reference": "26b978a8702e166ba455910c52481963159b6ee8",
+                "url": "https://api.github.com/repos/yiisoft/yii-dataview/zipball/832f14490a021d240b7c7d0ed476063548176cf0",
+                "reference": "832f14490a021d240b7c7d0ed476063548176cf0",
                 "shasum": ""
             },
             "require": {
@@ -6380,7 +6380,7 @@
                 "yiisoft/arrays": "^3.1",
                 "yiisoft/data": "^2.0",
                 "yiisoft/friendly-exception": "^1.0",
-                "yiisoft/html": "^3.11",
+                "yiisoft/html": "^3.13 || ^4.0",
                 "yiisoft/injector": "^1.2",
                 "yiisoft/router": "^4.0",
                 "yiisoft/translator": "^3.2",
@@ -6451,7 +6451,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-12-14T07:01:43+00:00"
+            "time": "2026-03-21T14:40:58+00:00"
         },
         {
             "name": "yiisoft/yii-event",
