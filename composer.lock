@@ -4600,16 +4600,16 @@
         },
         {
             "name": "yiisoft/log",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/log.git",
-                "reference": "8c2775436442d5a74339fa2ae9df33788a190de3"
+                "reference": "e98e881d7ff0f00521a713a1852cbbffbaf279d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/log/zipball/8c2775436442d5a74339fa2ae9df33788a190de3",
-                "reference": "8c2775436442d5a74339fa2ae9df33788a190de3",
+                "url": "https://api.github.com/repos/yiisoft/log/zipball/e98e881d7ff0f00521a713a1852cbbffbaf279d5",
+                "reference": "e98e881d7ff0f00521a713a1852cbbffbaf279d5",
                 "shasum": ""
             },
             "require": {
@@ -4624,12 +4624,15 @@
                 "psr/log-implementation": "1.0.0"
             },
             "require-dev": {
-                "maglnet/composer-require-checker": "^4.4",
+                "bamarni/composer-bin-plugin": "^1.8.3",
+                "friendsofphp/php-cs-fixer": "^3.93",
+                "phpbench/phpbench": "^1.0",
                 "phpunit/phpunit": "^9.6.23",
                 "rector/rector": "^2.0.17",
                 "roave/infection-static-analysis-plugin": "^1.25",
                 "spatie/phpunit-watcher": "^1.23.6",
-                "vimeo/psalm": "^4.30 || ^5.26.1 || ^6.12"
+                "vimeo/psalm": "^4.30 || ^5.26.1 || ^6.12",
+                "yiisoft/code-style": "^1.0"
             },
             "suggest": {
                 "yiisoft/log-target-db": "Allows writing log messages to the database",
@@ -4639,6 +4642,11 @@
             },
             "type": "library",
             "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": true,
+                    "target-directory": "tools"
+                },
                 "config-plugin": {
                     "events-web": "events-web.php",
                     "events-console": "events-console.php"
@@ -4683,7 +4691,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-12-13T10:17:37+00:00"
+            "time": "2026-03-22T16:33:56+00:00"
         },
         {
             "name": "yiisoft/log-target-file",
