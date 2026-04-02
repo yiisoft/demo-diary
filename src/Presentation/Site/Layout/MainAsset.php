@@ -18,5 +18,6 @@ final class MainAsset extends AssetBundle
 
     public array $depends = [
         BootstrapAsset::class,
+        HtmxAsset::class,
     ];
 }
