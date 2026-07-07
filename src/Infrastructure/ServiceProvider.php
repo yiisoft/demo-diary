@@ -24,7 +24,7 @@ final readonly class ServiceProvider implements ServiceProviderInterface
             ConnectionInterface::class => static fn(Aliases $aliases) => new Connection(
                 new Driver(
                     new Dsn(databaseName: $aliases->get('@runtime/db.sqlite')),
-                ) ,
+                ),
                 new SchemaCache(
                     new FileCache($aliases->get('@runtime/cache/db')),
                 ),
