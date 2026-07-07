@@ -27,7 +27,7 @@ final readonly class ServiceProvider implements ServiceProviderInterface
                 ),
                 new SchemaCache(
                     new FileCache($aliases->get('@runtime/cache/db')),
-                ),
+                )
             ),
 
             MigrationService::class => [
