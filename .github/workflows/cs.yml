@@ -1,6 +1,3 @@
-permissions:
-  contents: read # Required to check out the repository.
-
 name: Code Style
 
 on:
@@ -13,6 +10,9 @@ on:
       - '.gitattributes'
       - 'infection.json.dist'
       - 'psalm.xml'
+
+permissions:
+  contents: read
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
@@ -29,6 +29,7 @@ jobs:
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Install PHP
         uses: shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240 # v2
