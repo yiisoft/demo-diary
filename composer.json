@@ -106,7 +106,7 @@
         "codeception/codeception": "^5.3.5",
         "codeception/module-asserts": "^3.3.0",
         "codeception/module-cli": "^2.0.1",
-        "codeception/module-phpbrowser": "^4.0.0",
+        "codeception/module-phpbrowser": "^4.1.0",
         "friendsofphp/php-cs-fixer": "^3.94.2",
         "phpunit/phpunit": "^13.0.6",
         "rector/rector": "^2.3.9",
