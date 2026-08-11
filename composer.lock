@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82d500167f91b69f77978e6e85845000",
+    "content-hash": "0f8dcc7124ff1d93d24dd83b9b277f4b",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -2474,16 +2474,16 @@
         },
         {
             "name": "yiisoft/auth",
-            "version": "3.3.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/auth.git",
-                "reference": "6d556f7d499f2af101c00dadb2d71f585f29427c"
+                "reference": "c2f6bbc991ff800e0038fe60b69d08e89b5248d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/auth/zipball/6d556f7d499f2af101c00dadb2d71f585f29427c",
-                "reference": "6d556f7d499f2af101c00dadb2d71f585f29427c",
+                "url": "https://api.github.com/repos/yiisoft/auth/zipball/c2f6bbc991ff800e0038fe60b69d08e89b5248d5",
+                "reference": "c2f6bbc991ff800e0038fe60b69d08e89b5248d5",
                 "shasum": ""
             },
             "require": {
@@ -2498,11 +2498,11 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.92.5",
                 "jetbrains/phpstorm-attributes": "^1.2",
-                "maglnet/composer-require-checker": "^4.7.1",
                 "nyholm/psr7": "^1.8.2",
                 "phpunit/phpunit": "^10.5.60",
                 "rector/rector": "^2.3.0",
                 "roave/infection-static-analysis-plugin": "^1.35",
+                "shipmonk/composer-dependency-analyser": "^1.8.4",
                 "spatie/phpunit-watcher": "^1.24.4",
                 "vimeo/psalm": "^5.26.1 || ^6.16.1",
                 "yiisoft/yii-debug": "dev-master"
@@ -2549,7 +2549,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2026-08-06T07:37:25+00:00"
+            "time": "2026-08-11T09:46:21+00:00"
         },
         {
             "name": "yiisoft/cache",
