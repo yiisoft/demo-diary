@@ -109,7 +109,7 @@
         "codeception/module-phpbrowser": "^4.1.0",
         "friendsofphp/php-cs-fixer": "^3.95.18",
         "phpunit/phpunit": "^13.0.6",
-        "rector/rector": "^2.6.2",
+        "rector/rector": "^2.6.3",
         "roave/security-advisories": "dev-latest",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
         "vimeo/psalm": "^6.16.1"
