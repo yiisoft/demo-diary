@@ -88,7 +88,7 @@
         "yiisoft/router": "^4.0.2",
         "yiisoft/router-fastroute": "^4.0.3",
         "yiisoft/security": "^1.2",
-        "yiisoft/session": "^3.0.1",
+        "yiisoft/session": "^3.0.2",
         "yiisoft/strings": "^2.7",
         "yiisoft/user": "^2.3.2",
         "yiisoft/validator": "^2.6.0",
