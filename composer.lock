@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a624e0ae4f7aea59631db58ce8c25967",
+    "content-hash": "2aa3e929e62e562bfe19effa52401a4b",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -5738,16 +5738,16 @@
         },
         {
             "name": "yiisoft/session",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/session.git",
-                "reference": "755e15352181995b69a4f293a06a128e0569915d"
+                "reference": "ca2bcad953c17c7dabce4c0ef8f7102fc522c34e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/session/zipball/755e15352181995b69a4f293a06a128e0569915d",
-                "reference": "755e15352181995b69a4f293a06a128e0569915d",
+                "url": "https://api.github.com/repos/yiisoft/session/zipball/ca2bcad953c17c7dabce4c0ef8f7102fc522c34e",
+                "reference": "ca2bcad953c17c7dabce4c0ef8f7102fc522c34e",
                 "shasum": ""
             },
             "require": {
@@ -5759,13 +5759,16 @@
                 "yiisoft/cookies": "^1.0"
             },
             "require-dev": {
-                "maglnet/composer-require-checker": "^4.4",
+                "bamarni/composer-bin-plugin": "*",
+                "friendsofphp/php-cs-fixer": "^3.95",
                 "nyholm/psr7": "^1.8.2",
                 "phpunit/phpunit": "^9.6.22",
                 "rector/rector": "^2.0.10",
                 "roave/infection-static-analysis-plugin": "^1.25",
+                "shipmonk/composer-dependency-analyser": "^1.8",
                 "spatie/phpunit-watcher": "^1.23.6",
                 "vimeo/psalm": "^4.30 || ^5.6 || ^6.8.8",
+                "yiisoft/code-style": "^1.0",
                 "yiisoft/di": "^1.2.1"
             },
             "suggest": {
@@ -5773,6 +5776,11 @@
             },
             "type": "library",
             "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": true,
+                    "target-directory": "tools"
+                },
                 "config-plugin": {
                     "di-web": "di-web.php",
                     "params": "params.php"
@@ -5816,7 +5824,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-12-17T13:15:55+00:00"
+            "time": "2026-08-26T06:12:39+00:00"
         },
         {
             "name": "yiisoft/strings",
