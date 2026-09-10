@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac0ce56b53c89ba56fb3b4ac40955b51",
+    "content-hash": "fb9a6150ed7cb41dc997241a4924f1d2",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -6487,16 +6487,16 @@
         },
         {
             "name": "yiisoft/yii-dataview",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-dataview.git",
-                "reference": "832f14490a021d240b7c7d0ed476063548176cf0"
+                "reference": "4afbd379b54b92cd639a0526630a4b45c91c3f8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-dataview/zipball/832f14490a021d240b7c7d0ed476063548176cf0",
-                "reference": "832f14490a021d240b7c7d0ed476063548176cf0",
+                "url": "https://api.github.com/repos/yiisoft/yii-dataview/zipball/4afbd379b54b92cd639a0526630a4b45c91c3f8a",
+                "reference": "4afbd379b54b92cd639a0526630a4b45c91c3f8a",
                 "shasum": ""
             },
             "require": {
@@ -6515,10 +6515,10 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.91",
-                "maglnet/composer-require-checker": "^4.7.1",
                 "phpunit/phpunit": "^10.5.58",
                 "rector/rector": "^2.1.7",
                 "roave/infection-static-analysis-plugin": "^1.35",
+                "shipmonk/composer-dependency-analyser": "^1.8",
                 "spatie/phpunit-watcher": "^1.24",
                 "vimeo/psalm": "^5.26.1 || ^6.12",
                 "yiisoft/di": "^1.4",
@@ -6576,7 +6576,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2026-03-21T14:40:58+00:00"
+            "time": "2026-09-02T13:08:01+00:00"
         },
         {
             "name": "yiisoft/yii-event",
