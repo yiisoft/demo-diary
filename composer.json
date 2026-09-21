@@ -109,10 +109,10 @@
         "codeception/module-phpbrowser": "^4.1.0",
         "friendsofphp/php-cs-fixer": "^3.95.18",
         "phpunit/phpunit": "^13.0.6",
-        "rector/rector": "^2.6.6",
+        "rector/rector": "^2.6.7",
         "roave/security-advisories": "dev-latest",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
-        "vimeo/psalm": "^6.17.0"
+        "vimeo/psalm": "^6.17.1"
     },
     "autoload": {
         "psr-4": {
