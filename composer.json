@@ -51,7 +51,7 @@
         "psr/http-server-handler": "^1.0.2",
         "psr/http-server-middleware": "^1.0.2",
         "psr/log": "^3.0.2",
-        "ramsey/uuid": "^4.9.3",
+        "ramsey/uuid": "^4.9.4",
         "symfony/console": "^8.1.6",
         "vlucas/phpdotenv": "^5.7.0",
         "yiisoft/active-record": "^1.1.0",
