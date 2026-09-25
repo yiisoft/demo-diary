@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f594155b5e0eadf75cdf6c98051af896",
+    "content-hash": "2877e0bb58c462fcda4a556c582176db",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -10946,10 +10946,16 @@
         {
             "name": "php-forge/debug-core",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../../php-forge/debug-core",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-forge/debug-core.git",
                 "reference": "1357cc461ab2d002ce42ffa0740828645515fa69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-forge/debug-core/zipball/1357cc461ab2d002ce42ffa0740828645515fa69",
+                "reference": "1357cc461ab2d002ce42ffa0740828645515fa69",
+                "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
@@ -10975,16 +10981,17 @@
                 "xepozz/internal-mocker": "^1.4",
                 "yii2-extensions/scaffold": "^0.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "0.1.x-dev"
-                },
                 "scaffold": {
                     "allowed-packages": [
                         "php-forge/baseline-frontend",
                         "php-forge/coding-standard"
                     ]
+                },
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
                 }
             },
             "autoload": {
@@ -10992,37 +10999,7 @@
                     "PHPForge\\Debug\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "PHPForge\\Debug\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "check-dependencies": [
-                    "./vendor/bin/composer-require-checker check"
-                ],
-                "ecs": [
-                    "./vendor/bin/ecs --fix"
-                ],
-                "mutation": [
-                    "Composer\\Config::disableProcessTimeout",
-                    "php -d memory_limit=-1 vendor/bin/infection --threads=4 --ignore-msi-with-no-mutations --min-msi=100 --min-covered-msi=100"
-                ],
-                "mutation-static": [
-                    "Composer\\Config::disableProcessTimeout",
-                    "./vendor/bin/phpstan clear-result-cache",
-                    "php -d memory_limit=-1 vendor/bin/infection --threads=4 --ignore-msi-with-no-mutations --min-msi=100 --min-covered-msi=100 --static-analysis-tool=phpstan --static-analysis-tool-options='--memory-limit=-1'"
-                ],
-                "rector": [
-                    "./vendor/bin/rector process"
-                ],
-                "static": [
-                    "./vendor/bin/phpstan --memory-limit=-1"
-                ],
-                "tests": [
-                    "./vendor/bin/phpunit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -11042,10 +11019,11 @@
                 "php",
                 "profiling"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/php-forge/debug-core/issues",
+                "source": "https://github.com/php-forge/debug-core/tree/main"
+            },
+            "time": "2026-09-25T18:54:46+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -16953,10 +16931,16 @@
         {
             "name": "yii3/debug",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../../yii3/debug",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii3/debug.git",
                 "reference": "dd44a83c8ea8583eca419a2aeef878637949f8bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii3/debug/zipball/dd44a83c8ea8583eca419a2aeef878637949f8bd",
+                "reference": "dd44a83c8ea8583eca419a2aeef878637949f8bd",
+                "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2.2",
@@ -17014,28 +16998,29 @@
                 "yiisoft/mailer": "Captures every sent message in the built-in Mail panel and stores it as a downloadable `.eml` file.",
                 "yiisoft/mailer-symfony": "Stores each captured message as its RFC 5322 source and reads its body and headers the way the Yii2 debugger does."
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "0.1.x-dev"
-                },
-                "config-plugin-options": {
-                    "source-directory": "config"
-                },
-                "config-plugin": {
-                    "params": "params.php",
-                    "bootstrap": "bootstrap.php",
-                    "di": "di/*.php",
-                    "di-providers": "di-providers.php",
-                    "di-providers-web": "di-providers.php",
-                    "di-web": "di-web.php",
-                    "events-web": "events-web.php"
-                },
                 "scaffold": {
                     "allowed-packages": [
                         "php-forge/baseline",
                         "php-forge/coding-standard"
                     ]
+                },
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                },
+                "config-plugin": {
+                    "di": "di/*.php",
+                    "di-web": "di-web.php",
+                    "params": "params.php",
+                    "bootstrap": "bootstrap.php",
+                    "events-web": "events-web.php",
+                    "di-providers": "di-providers.php",
+                    "di-providers-web": "di-providers.php"
+                },
+                "config-plugin-options": {
+                    "source-directory": "config"
                 }
             },
             "autoload": {
@@ -17043,40 +17028,7 @@
                     "Yii3\\Debug\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Yii3\\Debug\\Tests\\": "tests"
-                },
-                "exclude-from-classmap": [
-                    "tests/Support/Stubs/after-middleware-event.php",
-                    "tests/Support/Stubs/before-middleware-event.php",
-                    "tests/Support/Stubs/unavailable-event-capture.php"
-                ]
-            },
-            "scripts": {
-                "check-dependencies": [
-                    "./vendor/bin/composer-require-checker check"
-                ],
-                "ecs": [
-                    "./vendor/bin/ecs --fix"
-                ],
-                "mutation": [
-                    "php -d memory_limit=-1 vendor/bin/infection --threads=4 --ignore-msi-with-no-mutations --min-msi=100 --min-covered-msi=100"
-                ],
-                "mutation-static": [
-                    "Composer\\Config::disableProcessTimeout",
-                    "php -d memory_limit=-1 vendor/bin/infection --threads=4 --ignore-msi-with-no-mutations --min-msi=100 --min-covered-msi=100 --static-analysis-tool=phpstan --static-analysis-tool-options='--memory-limit=-1'"
-                ],
-                "rector": [
-                    "./vendor/bin/rector process"
-                ],
-                "static": [
-                    "./vendor/bin/phpstan --memory-limit=-1"
-                ],
-                "tests": [
-                    "./vendor/bin/phpunit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -17096,10 +17048,11 @@
                 "php",
                 "yii3"
             ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/yii3/debug/issues",
+                "source": "https://github.com/yii3/debug/tree/main"
+            },
+            "time": "2026-09-25T20:13:33+00:00"
         },
         {
             "name": "yiisoft/profiler",
