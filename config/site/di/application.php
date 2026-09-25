@@ -30,6 +30,7 @@ return [
                 'class' => MiddlewareDispatcher::class,
                 'withMiddlewares()' => [
                     [
+                        ...$params['yiisoft/middleware-dispatcher']['middlewares'] ?? [],
                         ErrorCatcher::class,
                         static fn(ExceptionResponderFactory $factory) => $factory->create(),
                         SessionMiddleware::class,
