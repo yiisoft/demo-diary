@@ -25,6 +25,11 @@ final readonly class UrlGenerator
         return $this->generate('login');
     }
 
+    public function contact(): string
+    {
+        return $this->generate('contact');
+    }
+
     public function logout(): string
     {
         return $this->generate('logout');
