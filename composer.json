@@ -103,7 +103,7 @@
     },
     "require-dev": {
         "codeception/c3": "^2.9",
-        "codeception/codeception": "^5.3.5",
+        "codeception/codeception": "^5.3.6",
         "codeception/module-asserts": "^3.3.0",
         "codeception/module-cli": "^2.0.1",
         "codeception/module-phpbrowser": "^4.1.0",
