@@ -88,7 +88,7 @@
         "yiisoft/router": "^4.0.2",
         "yiisoft/router-fastroute": "^4.0.3",
         "yiisoft/security": "^1.2",
-        "yiisoft/session": "^3.0.2",
+        "yiisoft/session": "^3.0.3",
         "yiisoft/strings": "^2.7",
         "yiisoft/user": "^2.3.2",
         "yiisoft/validator": "^2.6.0",
@@ -103,16 +103,16 @@
     },
     "require-dev": {
         "codeception/c3": "^2.9",
-        "codeception/codeception": "^5.3.5",
+        "codeception/codeception": "^5.3.7",
         "codeception/module-asserts": "^3.3.0",
         "codeception/module-cli": "^2.0.1",
         "codeception/module-phpbrowser": "^4.1.0",
-        "friendsofphp/php-cs-fixer": "^3.95.18",
-        "phpunit/phpunit": "^13.0.6",
+        "friendsofphp/php-cs-fixer": "^3.95.27",
+        "phpunit/phpunit": "^13.4.1",
         "rector/rector": "^2.6.7",
         "roave/security-advisories": "dev-latest",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
-        "vimeo/psalm": "^6.18.1"
+        "vimeo/psalm": "^6.19.1"
     },
     "autoload": {
         "psr-4": {
