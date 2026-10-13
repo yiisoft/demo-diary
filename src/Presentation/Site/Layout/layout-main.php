@@ -71,6 +71,7 @@ $this->beginPage()
                     permission: Permission::UserManage,
                     activeCallback: static fn(CurrentRoute $currentRoute) => str_starts_with($currentRoute->getName() ?? '', 'user/'),
                 ),
+                new Item('Contact', urlName: 'contact'),
             ],
         ]) ?>
         <div class="col-md-3 d-flex align-items-center justify-content-end">

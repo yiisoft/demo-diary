@@ -10,6 +10,7 @@ use Yiisoft\Router\Route;
 
 return [
     Route::get('/')->action(\App\UseCase\Home\Action::class)->name('home'),
+    Route::methods(['GET', 'POST'], '/contact')->action(\App\UseCase\Contact\Action::class)->name('contact'),
 
     /**
      * Diary
