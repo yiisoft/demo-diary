@@ -108,11 +108,11 @@
         "codeception/module-cli": "^2.0.1",
         "codeception/module-phpbrowser": "^4.1.0",
         "friendsofphp/php-cs-fixer": "^3.95.27",
-        "phpunit/phpunit": "^13.4.5",
+        "phpunit/phpunit": "^13.4.6",
         "rector/rector": "^2.8.3",
         "roave/security-advisories": "dev-latest",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
-        "vimeo/psalm": "^6.20.4"
+        "vimeo/psalm": "^6.20.5"
     },
     "autoload": {
         "psr-4": {
