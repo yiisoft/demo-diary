@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78c2cf806af15023199d472f8c6c4f77",
+    "content-hash": "9b9f0fd524d9335d468fd40dbe3d7245",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -3458,28 +3458,29 @@
         },
         {
             "name": "yiisoft/definitions",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/definitions.git",
-                "reference": "efba764905b89b549e2b5a7a72f50a79b3d5b0cc"
+                "reference": "5cb6e09832ec07db65d1f4c52c917e45815c1938"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/definitions/zipball/efba764905b89b549e2b5a7a72f50a79b3d5b0cc",
-                "reference": "efba764905b89b549e2b5a7a72f50a79b3d5b0cc",
+                "url": "https://api.github.com/repos/yiisoft/definitions/zipball/5cb6e09832ec07db65d1f4c52c917e45815c1938",
+                "reference": "5cb6e09832ec07db65d1f4c52c917e45815c1938",
                 "shasum": ""
             },
             "require": {
-                "php": "8.1 - 8.5",
+                "php": "8.1 - 8.6",
                 "psr/container": "^1.0 || ^2.0"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.3",
                 "friendsofphp/php-cs-fixer": "^3.69",
-                "maglnet/composer-require-checker": "^4.7.1",
+                "phpstan/phpstan": "^2.3",
                 "phpunit/phpunit": "^10.5.45",
-                "rector/rector": "^2.0.9",
+                "rector/rector": "^2.4.2",
+                "shipmonk/composer-dependency-analyser": "^1.8",
                 "spatie/phpunit-watcher": "^1.24",
                 "yiisoft/test-support": "^3.0.1"
             },
@@ -3523,7 +3524,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2025-12-02T05:29:43+00:00"
+            "time": "2026-11-11T19:08:02+00:00"
         },
         {
             "name": "yiisoft/di",
